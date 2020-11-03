@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <!-- main css -->
+      <link rel="stylesheet" href="jquery.min.js">
+      
+    
+    
+    </head>
+  <body style="overflow:hidden" >
+      <div class="row" style="background-color:rgb(156, 156, 156);border:1px solid rgb(0,0,0);">
+          <span style="font-size:12px;">Patch downloader</span>
+      </div>
+      <div class="row" style="font-size:14px;"><br><br>
+          
+                <a href="file:///C:/wamp222/www/patchDownloader/patch/pages/videoOne.mp4" download >click me</a><br><br>
+                <video controls>
+                    <source src="videoOne.mp4" type="video/mp4">
+
+                </video>
+                
+                
+          <script>
+            function moveContent(file) {
+                //alert("hello there, i was initialised...");
+                var link = document.getElementById("btnDownload");
+                link.setAttribute("download", file);
+                link.click();
+                
+                /*
+                $(document).ready(function() {
+                    $('#btnDownload').click(function(e){
+                        e.preventDefault();
+                        window.location.href = "videoOne.mp4";
+                    });
+                });
+                */
+            }
+        </script> 
+          
+      </div>
+      
+    </div>  
+
+          
+    </body>
+</html>
